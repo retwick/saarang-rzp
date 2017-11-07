@@ -1,0 +1,20 @@
+
+<form action="/purchase" method="POST">
+<!-- Note that the amount is in paise = 50 INR -->
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="rzp_test_2LJTA0baC5T5ER"
+    data-amount={{amount}} 
+    data-buttontext="Pay with Razorpay"
+    data-name="Saarang"
+    data-description="Tickets via RZP"
+    data-image="http://freevector.co/wp-content/uploads/2012/07/78946-big-bug.png"
+    data-prefill.name="Retwick"
+    data-prefill.email="retwickrajeevan1@gmail.com"
+    data-prefill.contact="9500197488"
+    data-theme.color="#F37254"
+    data-order_id = {{order_id}} 
+    
+></script>
+<input type="hidden" value="Hidden Element" name="hidden">
+</form>
